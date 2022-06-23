@@ -13,11 +13,6 @@ const columns = [
   { type: 'string', label: 'Dependencies' },
 ];
 
-Date.prototype.addDays = function (days) {
-  this.setDate(this.getDate() + parseInt(days));
-  return this;
-};
-
 function daysToMilliseconds(days) {
   return days * 24 * 60 * 60 * 1000;
 }
@@ -25,11 +20,14 @@ function daysToMilliseconds(days) {
 // var date = new Date("11/21/1987 16:00:00"); // some mock date
 // var milliseconds = date.getTime();
 
-const startDate = new Date('2022-06-23T06:49:34.611Z');
-const endDate = new Date('2022-06-25T06:49:34.611Z');
+const startDate = new Date('2022-06-05T06:49:34.611Z');
+const endDate = new Date('2022-06-10T06:49:34.611Z');
 
-const startDate2 = new Date('2022-07-10T06:49:34.611Z');
-const endDate2 = new Date('2022-07-15T06:49:34.611Z');
+const startDate2 = new Date('2022-06-11T06:49:34.611Z');
+const endDate2 = new Date('2022-06-15T06:49:34.611Z');
+
+const startDate3 = new Date('2022-06-17T06:49:34.611Z');
+const endDate3 = new Date('2022-06-20T06:49:34.611Z');
 
 const rows = [
   [
@@ -48,6 +46,16 @@ const rows = [
     'walk', //Resource
     startDate2,
     endDate2,
+    null,
+    50,
+    'walk',
+  ],
+  [
+    'walk2', //ID
+    'new2', //Title
+    'walk', //Resource
+    startDate3,
+    endDate3,
     null,
     50,
     'walk',
@@ -109,7 +117,7 @@ export const options = {
       strokeWidth: 2,
     },
 
-    innerGridTrack: { fill: '#fff3e0' }, //black
+    innerGridTrack: { fill: '#83E5FF' }, //black
     innerGridDarkTrack: { fill: '#ffcc80' },
   },
 };
