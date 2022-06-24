@@ -2,6 +2,10 @@ import React from 'react';
 import { Chart } from 'react-google-charts';
 // https://developers.google.com/chart/interactive/docs/gallery/ganttchart#data-format
 
+
+
+
+
 const columns = [
   { type: 'string', label: 'Task ID' },
   { type: 'string', label: 'Task Name' },
@@ -39,7 +43,7 @@ const rows = [
     null,
     50,
     null,
-  ],
+  ], 
   [
     'walk1', //ID
     'new', //Title
